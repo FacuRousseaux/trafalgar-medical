@@ -1,0 +1,37 @@
+.footer {
+    background-image: linear-gradient(hsl(201, 85%, 68%),hsl(216, 85%, 65%));
+    padding: toRem(64) 0;
+    color: $color-white;
+    font-size: $font-md;
+
+    &__section {
+        display: flex;
+        justify-content: space-between;
+        @include xl {
+            flex-direction: column;
+            gap: toRem(40);
+        }
+    }
+
+    &__side:first-child {
+        width: 40%;
+        @include xl {
+            width: 100%;
+        }
+    }
+
+    ul {
+        li {
+            margin-bottom: toRem(15);
+            &:first-child {
+                font-weight: 600;
+            }  
+            a {
+                color: $color-white;
+            }
+        }
+    }
+
+
+
+}

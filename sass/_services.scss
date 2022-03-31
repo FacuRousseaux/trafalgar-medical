@@ -1,0 +1,15 @@
+.services {
+    background-image: url(../images/bg-service-left.svg), 
+                      url(../images/bg-service-right.svg);
+    background-repeat: no-repeat;
+    background-position: left center, 85% 70%;
+    padding-top: toRem(80);
+    padding-bottom: toRem(100);
+
+    &__text {
+        width: 85%;        
+        margin: 0 auto;
+        margin-bottom: toRem(80);
+        text-align: center;
+    }
+}

@@ -1,0 +1,26 @@
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: calc(100vh - 90px);
+
+    @include md {
+        flex-direction: column;
+        height: auto;
+        gap: toRem(80);
+    }
+
+    &__text {
+        width: 40%;
+        @include md {
+            width: 100%;
+        }
+    }
+
+    &__img {
+        width: 50%;
+        @include md {
+            width: 80%;
+        }
+    }
+}

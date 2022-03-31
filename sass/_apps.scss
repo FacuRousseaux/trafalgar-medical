@@ -1,0 +1,30 @@
+.apps {
+    padding-bottom: toRem(100);
+
+    .app {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: toRem(40) 0;
+
+        @include md {
+            flex-direction: column;
+            gap: toRem(40);
+        }
+
+        &__img {
+            width: 52%;
+            @include md {
+                width: 80%;
+                order: 2
+            }
+        }
+
+        &__text {
+            width: 40%;
+            @include md {
+                width: 100%;
+            }
+        }
+    }
+}

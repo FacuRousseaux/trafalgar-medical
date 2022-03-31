@@ -1,0 +1,71 @@
+.cards {
+    display: grid;
+    grid-template-columns: unquote("repeat(auto-fill, minmax(min(100%, 350px), 1fr))");
+    gap: toRem(34);
+    margin-bottom: toRem(70);
+    .card {
+        display: flex;
+        flex-direction: column;
+        // justify-content: space-between;
+        background-color: $color-white;
+        border-radius: toRem(20);
+        box-shadow: 1px 14px 25px hsla(0, 0%, 84%, 56%);
+
+        &__content {
+            padding: toRem(40);
+        }
+
+        &__title-md {
+            font-size: toRem(24);
+            font-weight: 700;
+            margin-bottom: toRem(8);
+        }
+
+        &__title-sm {
+            font-size: toRem(21);
+        }
+
+        &__paragraph-md {
+            font-size: toRem(16);
+            font-weight: 300;
+            color: $color-light;
+        }
+
+        &__picture {
+            width: 100%;
+        }
+        // &::before {
+        //     display: block;
+        //     margin-bottom: toRem(22);
+        //     line-height: toRem(354);
+        // }
+
+        // &:nth-child(1)::before {
+        //     content: url('../images/icon/search.svg');
+        // }
+
+        // &:nth-child(2)::before {
+        //     content: url('../images/icon/online.svg');
+        // }
+
+        // &:nth-child(3)::before {
+        //     content: url('../images/icon/consultation.svg');
+        // }
+
+        // &:nth-child(4)::before {
+        //     content: url('../images/icon/details.svg');
+        // }
+
+        // &:nth-child(5)::before {
+        //     content: url('../images/icon/emergency.svg');
+        // }
+
+        // &:nth-child(6)::before {
+        //     content: url('../images/icon/tracking.svg');
+        // }
+
+
+
+        
+    }
+}

@@ -1,0 +1,151 @@
+.container {
+    width: 90%;
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+.overflow {
+    overflow: hidden;
+}
+
+.img {
+    max-width: 100%;
+    display: block;
+}
+
+.title-xl {
+    font-size: $font-xl;
+    color: var(--color-dark);
+}
+
+.title-lg {
+    font-size: $font-lg;
+    font-weight: 700;
+}
+
+.title-md {
+    font-size: &font-lg;
+    font-weight: 700;
+    color: $color-dark;
+}
+
+.title-xl,
+.title-lg,
+.title-md {
+    &--center {
+        text-align: center;
+    }
+}
+
+.paragraph-xl {
+    font-size: toRem(21);
+    font-weight: 300;
+    color: var(--color-light);
+}
+
+.paragraph-lg {
+    font-size: toRem(18);
+    color: $color-light;
+}
+
+.paragraph-xl,
+.paragraph-lg,
+.paragraph-md {
+    font-weight: 300;
+
+    &--center {
+        text-align: center;
+    }
+}
+
+.line-title {
+    width: 56px;
+    height: 2px;
+    background-color: $color-dark;
+    margin-top: toRem(26);
+    margin-bottom: toRem(31);
+
+    &--center {
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+.btn {
+    width: toRem(200);
+    height: toRem(60);
+    display: block;
+    font-size: $font-md;
+    font-weight: 700;
+    text-align: center;
+    color: $color-blue;
+    border: 2px solid $color-blue;
+    border-radius: 55px;
+    padding: toRem(15) 0;
+    transition: all .2s ease-in-out;
+
+    &:hover {
+        background-color: $color-blue;
+        color: $color-white;
+    }
+
+    &--solid {
+        background-color: $color-blue;
+        color: $color-white;
+
+        &:hover {
+            background-color: $color-white;
+            color: $color-blue;
+        }
+    }
+
+    &--text {
+        background-color: transparent;
+        border: none;
+        color: $color-blue;
+        text-align: left;
+        font-weight: 500;
+
+        &:hover {
+            background-color: transparent;
+            color: $color-blue;
+            text-decoration: underline;
+        }
+    }
+
+
+
+    &--center {
+        margin: 0 auto;
+    }
+}
+
+.made-by {
+    background-color: $color-dark;
+    color: $color-white;
+    padding: toRem(24);
+
+    a {
+        color: $color-white;
+        font-weight: 700;
+    }
+}
+
+/* MARGINS & PADDINGS */
+
+.mb-18 {
+    margin-bottom: toRem(18);
+}
+
+.mb-25 {
+    margin-bottom: toRem(25);
+}
+
+.mb-45 {
+    margin-bottom: toRem(45);
+}
+
+/* SLIDER */
+.splide__arrow {
+    background: hsl(0,0%,100%);
+}
